@@ -1,0 +1,9 @@
+ipykernel
+ipython
+ipywidgets
+langchain
+langchain-openai
+langchain-community
+pypdf
+bs4
+requests
