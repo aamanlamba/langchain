@@ -7,3 +7,15 @@ langchain-community
 pypdf
 bs4
 requests
+pillow
+pandas
+jq
+lxml
+unstructured
+markdown
+libmagic
+pdfminer
+unstructured[all-docs]
+python-pptx
+feedparser
+python-dotenv

@@ -1,0 +1,11 @@
+From: sender@example.com
+To: recipient@example.com
+Subject: Test Email
+Date: Sat, 26 Oct 2025 10:00:00 -0500
+
+Dear User,
+
+This is a test email for demonstrating the UnstructuredEmailLoader.
+
+Best regards,
+Sender
