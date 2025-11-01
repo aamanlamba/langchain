@@ -14,12 +14,18 @@ def hello_agent_node(state:HelloAgentState =  "Hello from HelloAgent!") -> Hello
     print(state["greeting"])
     return state
 
+def exclamation_node(state:HelloAgentState) -> HelloAgentState:
+    state["greeting"] += "!!!"
+    return state
+
 # initialize graph
 builder = StateGraph(HelloAgentState)
 builder.add_node("greet",hello_agent_node)
+builder.add_node("exclaim",exclamation_node)
 
 builder.add_edge(START, "greet")
-builder.add_edge("greet",END)
+builder.add_edge("greet","exclaim")
+builder.add_edge("exclaim",END)
 
 # compile and run the graph
 graph = builder.compile()
